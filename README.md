@@ -14,9 +14,9 @@ Yellow Trip - Github/
 │   ├── yellow_tripdata_2026-05_sample.xlsx
 │   └── loading_data_to_excel.ipynb
 ├── analysis/
-│   └── cleaned_NYC_Taxi_Analysis.xlsx
+│   └── cleaned_NYC_Taxi_Analysis.xlsx  # Cleaned data and dashboard
 ├── dashboard/
-│   └── Screenshot 2026-09-15 162800.png
+│   └── Screenshot 2026-09-15 162800.png  # Dashboard preview
 └── taxi_zone_lookup_table/
     └── taxi_zone_lookup.csv
 ```
@@ -35,17 +35,9 @@ Yellow Trip - Github/
 
 ## Data Sources
 
-The project uses a sample of NYC Yellow Taxi trip data for May 2026 and a taxi-zone lookup table. The Parquet file is the primary trip-data file, while the CSV and Excel files provide smaller, convenient versions for analysis and review.
+The project uses a sample of NYC Yellow Taxi trip data for May 2026 and a taxi-zone lookup table. The Parquet file is the primary trip-data file, while the CSV and sample Excel file provide smaller, convenient versions for analysis and review. The cleaned analysis workbook contains the cleaned data and the completed dashboard.
 
 Official Parquet data source: [yellow_tripdata_2026-05.parquet](https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-05.parquet)
-
-## Analysis Workflow
-
-1. Load the trip data in the notebook.
-2. Prepare and export data for Excel analysis.
-3. Enrich trip records with taxi-zone names using the lookup table.
-4. Build summary tables and visualizations in Excel.
-5. Review the dashboard and document the resulting business insights.
 
 ## Key Insights
 
@@ -56,3 +48,11 @@ Official Parquet data source: [yellow_tripdata_2026-05.parquet](https://d37ci6vz
 5. Manhattan - Upper East Side South was the most frequently used pickup zone, with noticeably higher trip volume than the other leading zones.
 6. The most frequently observed route was Upper East Side South to Upper East Side North, making it the dominant origin-destination combination in the sample.
 7. The sample shows higher average daily pickup demand on weekdays than on weekends.
+
+## Analysis Workflow
+
+1. Load the trip data in the notebook.
+2. Prepare and export data for Excel analysis.
+3. Enrich trip records with taxi-zone names using the lookup table.
+4. Build cleaned data, summary tables, and the dashboard in the analysis workbook.
+5. Review the dashboard preview and document the resulting business insights.
